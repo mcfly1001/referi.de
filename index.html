@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<title>RE; FERI Grid System</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel=icon href=data:,>
+	<link rel="stylesheet" href="grid.css">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="An initiative to strengthen the freedom and independence of the web by challenging centralized and closed systems and enhancing the former individuality of the web.">
+	<style>
+		hr {border: 1px solid rgba(0, 0, 0, 0.1);}
+		body {font-family:sans-serif;line-height:1.375em}
+		h1,h2,h3 {line-height: 1em;letter-spacing:-.013em;}
+		h3 {line-height: 1.2em;}
+		sub{vertical-align:baseline;position:relative;top:0.3em}
+		.center{text-align:center}
+		.right{text-align:right}
+		.bar{background:black;height:1.375em}
+		.bar:hover{background:transparent;box-shadow:0 0 0 1px black}
+		.button {display: inline-block;padding: .7em .8em .6em;border: 0.1rem solid black;cursor: pointer;}
+		.button:hover {background: black;color: white;}
+	</style>
+</head>
+<body>
+	<cell span=8>
+		<h1>The re;feri grid system</h1>
+	</cell>
+	<cell span=6>
+		<p>Every website emits CO<sub>2</sub>. Behind some
+links, you may even find the carbon footprint equivalent to that of a
+plastic bag <a
+href="https://www.verbraucherservice-bayern.de/presse/so-kommunizieren-sie-nachhaltig">[1]</a>.
+Over the past decade, the average size of a mobile website has increased
+sixfold to 2,011 KB <a
+href="https://httparchive.org/reports/page-weight">[2]</a>—that's more
+content than the combined length of three Harry Potter novels <a
+href="https://github.com/amephraim/nlp/tree/master/texts">[3]</a>.</p>
+		<p>As part of my bachelor's thesis, I launched an
+initiative called RE; FERI to counteract the consumption-driven vision of
+the web and reduce entry barriers. The Raster System was part of it. Now, three years later, I've made it accessible in English to ensure universal access.</p>
+	</cell>
+	<cell span=8><hr></cell>
+	<cell span=1 class="center">1</cell>
+	<cell span=1 class="center">2</cell>
+	<cell span=1 class="center">3</cell>
+	<cell span=1 class="center">4</cell>
+	<cell span=1 class="center">5</cell>
+	<cell span=1 class="center">6</cell>
+	<cell span=1 class="center">7</cell>
+	<cell span=1 class="center">8</cell>
+	<cell span=1 class="bar">span=1</cell>
+	<cell span=1 class="bar">span=1</cell>
+	<cell span=1 class="bar">span=1</cell>
+	<cell span=1 class="bar">span=1</cell>
+	<cell span=1 class="bar">span=1</cell>
+	<cell span=1 class="bar">span=1</cell>
+	<cell span=1 class="bar">span=1</cell>
+	<cell span=1 class="bar">span=1</cell>
+	<cell span=2 class="bar">span=2 or 1-2</cell>
+	<cell span=4-6 class="bar">span=4-6</cell>
+	<cell span=2 class="bar">span=2 or 7-8</cell>
+	<cell span=2-4 class="bar">span=2-4</cell>
+	<cell span=6-7 class="bar">span=6-7</cell>
+	<cell span=3 class="bar">span=3 or 1-3</cell>
+	<cell span=2 class="bar">span=2 or 4-5</cell>
+	<cell span=6-8 class="bar">span=3 or 6-8</cell>
+	<cell span=2-3 class="bar">span=2-3</cell>
+	<cell span=5-8 class="bar">span=5-8</cell>
+	<cell span=8 class="right"><i>Hover over the black fields</i></cell>
+	<cell span=8><h3>Simple, Efficient & Durable</h3>This grid
+system consists of a single CSS file, which in turn consists of only a
+few lines of code. It does not require bloated JavaScript and is very
+resource-efficient and fast, with only about 1 KB in size. With minor
+modifications, it is even possible to use this grid system for designing
+posters. These posters can be exported as PDFs using the browser's
+<i>Print</i> function.</p>
+		<a href="raster-system.zip" style="color:#000"><div
+class="button">raster-system.zip (2 KB)</div></a><br><br>
+	</cell>
+	<cell span=3>
+		<b>Instructions</b><br>The grid is divided into 8, alternatively 12 columns. Columns are assigned using the <mark>&lt;cell&gt;</mark> tag, and their respective length is specified using <mark>span=</mark>.
+	</cell>
+	<cell span=3>
+		<b>Example</b><br><mark>&lt;cell span=3&gt;</mark> creates a cell that is 3 columns wide. If there is not enough space in the current row, it moves to the next row.
+	</cell>
+	<cell span=2><br>
+		<mark>&lt;cell span=5-8&gt;</mark> creates a cell that starts in the 5th column and ends in the 8th column.</p>
+	</cell>
+	<cell span=8>
+		<details>
+			<summary><b>Posters (de)</b></summary>
+			Poster 1 <a href="poster1.pdf">[PDF, 23 KB]</a> <a href="poster1.html">[HTML]</a><br>
+			Poster 2 <a href="poster2.pdf">[PDF, 25 KB]</a> <a href="poster2.html">[HTML]</a>
+		</details>
+	</cell>
+	<cell span="8"><footer>If you have any questions or are unsure
+where to start, contact  me through: <a href="http://korayer.de">korayer.de</a></footer></cell>
+</body>
+</html>
+
